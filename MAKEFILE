@@ -1,0 +1,99 @@
+# IZMIR WATCOM Make file
+
+.c.obj:
+        wcc386 /s $<
+        
+.asm.obj:
+        tasmx /ml $*
+
+#
+# first target izmir1.exe
+#
+izmir.bin: start.obj iziz.obj IZ_DEMO1.OBJ cops_dat.obj sound.lib
+       wcl386 /fe=izmir.bin /fm=izmir $< 
+#  use this for pmodew
+#       wcl386 /l=pmodew /fe=izmir.bin $< 
+
+# iziz.obj: iziz.asm
+#        tasmx /ml iziz.asm
+
+# cops_dat.obj: cops_dat.asm
+
+
+#
+# second target object.bod
+#
+
+object1.bod: object1.exe
+        splith $< 512
+
+object1.exe: object1.obj obj_dat1.obj
+        tlink /3 $<
+
+
+object2.bod: object2.exe
+        splith $< 512
+
+object2.exe: object2.obj obj_dat2.obj 2stage.obj
+        tlink /3 $<
+
+object3.bod: object3.exe
+        splith $< 512
+
+object3.exe: object3.obj 3stage.obj
+        tlink /3 $<
+
+object4.bod: object4.exe
+        splith $< 512
+
+object4.exe: object4.obj 4stage.obj
+        tlink /3 $<
+
+object5.bod: object5.exe
+        splith $< 512
+
+object5.exe: object5.obj 5stage.obj
+        tlink /3 $<
+
+object6.bod: object6.exe
+        splith $< 512
+
+object6.exe: object6.obj 6stage.obj
+        tlink /3 $<
+
+nameobj.bod: nameobj.exe
+        splith $< 512
+
+nameobj.exe: nameobj.obj credit.obj
+        tlink /3 $<
+
+
+
+enmap1.bod: enmap1.exe
+        splith $< 512
+
+enmap1.exe: enmap1.obj
+        tlink /3 $<
+
+
+texmap1.bod: texmap1.exe
+        splith $< 512
+
+texmap1.exe: texmap1.obj
+        tlink /3 $<
+
+
+texmap2.bod: texmap2.exe
+        splith $< 512
+
+texmap2.exe: texmap2.obj
+        tlink /3 $<
+
+texmap3.bod: texmap3.exe
+        splith $< 512
+
+texmap3.exe: texmap3.obj
+        tlink /3 $<
+
+
+
