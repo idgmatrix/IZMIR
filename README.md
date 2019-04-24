@@ -1,5 +1,5 @@
 
-![Alt text](/images/izmira.jpg)
+![Alt text](izmira.jpg)
 
 IZMIR (c) 1995 Mirinae Software, Inc. 
 
