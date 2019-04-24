@@ -38,4 +38,4 @@ splith is simple utility program for removing header portion from data files for
 
 use WMAKE(Watcom make program) to build the project using MAKEFILES.
 
-![Izmir](izmir1.jpg) ![Izmir](izmir2.png) ![Izmir](izmir3.jpg)
+![Izmir](Izmir1.jpg) ![Izmir](izmir2.png) ![Izmir](Izmir3.jpg)
