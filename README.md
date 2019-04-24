@@ -1,4 +1,6 @@
 
+![Alt text](/images/izmira.jpg)
+
 IZMIR (c) 1995 Mirinae Software, Inc. 
 
 This is the all files of excutables, datas and sources of PC game Izmir.
