@@ -22,9 +22,9 @@ If you want build project, you need Watcom C/C++ Compiler and Turbo Assembler.
 
 main source files are 
 
-iziz.asm             main program
-iz_demo1.asm         decoding FLIC movie file and playing BGM
-start.c              simple startup code for DOS extender
+* iziz.asm             main program
+* iz_demo1.asm         decoding FLIC movie file and playing BGM
+* start.c              simple startup code for DOS extender
 
 other *.asm files are various game datas.(they are emmbedded in game excutable file) 
 
